@@ -4,15 +4,25 @@ import Demo from "../../components/Demo/Demo";
 
 const App = () => {
     const [showModal, setShowModal] = useState(false);
+
     const [showAlert, setShowAlert] = useState(false);
+
     const [showAlertWithoutButton, setShowAlertWithoutButton] = useState(false);
+
     const showModalHandler = () => setShowModal(true);
+
     const closeModalHandler = () => setShowModal(false);
+
     const continueModalHandler = () => window.alert('You click on continue button.');
+
     const showAlertWithCloseButtonHandler = () => setShowAlert(true);
+
     const showAlertWithoutCloseButtonHandler = () => setShowAlertWithoutButton(true);
+
     const closeAlertHandler = () => setShowAlert(false);
+
     const closeAlertWithoutBtnHandler = () => setShowAlertWithoutButton(false);
+
     const modalButtons = [
         {type: 'primary', label: 'Continue', clicked: continueModalHandler},
         {type: 'danger', label: 'Close', clicked: closeModalHandler}
