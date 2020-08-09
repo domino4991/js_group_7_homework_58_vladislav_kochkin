@@ -1,0 +1,42 @@
+.Alert {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    background: rgba(176, 190, 197, 0.4);
+    padding: 15px 120px 15px 30px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.Alert .Alert-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.Alert.Alert-dismiss {
+    padding-right: 30px;
+}
+
+.Alert.warning {
+    background: rgba(245, 124, 0, 0.3);
+}
+
+.Alert.success {
+    background: rgba(0, 150, 136, 0.8);
+    color: #e0f2f1;
+}
+
+.Alert.danger {
+    background: rgba(211, 47, 47, 0.8);
+    color: #ffebee;
+}
+
+.Alert.primary {
+    background: rgba(21, 101, 192, 0.8);
+    color: #e3f2fd;
+}
